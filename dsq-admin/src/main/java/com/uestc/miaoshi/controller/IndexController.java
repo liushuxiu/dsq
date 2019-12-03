@@ -1,6 +1,6 @@
-package com.uestc.miaoshi.dsqadmin.com.uestc.miaoshi;
+package com.uestc.miaoshi.controller;
 
-import com.uestc.miaoshi.dsqadmin.com.uestc.miaoshi.com.uestc.miaoshi.model.PersonBean;
+import com.uestc.miaoshi.model.PersonBean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

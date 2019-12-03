@@ -1,4 +1,4 @@
-package com.uestc.miaoshi.dsqadmin.com.uestc.miaoshi.com.uestc.miaoshi.model;
+package com.uestc.miaoshi.model;
 
 
 import java.io.Serializable;
