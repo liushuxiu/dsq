@@ -1,6 +1,6 @@
 package com.consumer.myribbon.feign;
 
-import com.uestc.miaoshi.model.Student;
+import com.test.Student;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;

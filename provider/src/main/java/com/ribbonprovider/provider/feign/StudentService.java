@@ -1,6 +1,6 @@
 package com.ribbonprovider.provider.feign;
 
-import com.uestc.miaoshi.model.Student;
+import com.test.Student;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

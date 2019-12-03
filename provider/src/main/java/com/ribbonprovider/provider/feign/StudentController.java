@@ -1,5 +1,6 @@
 package com.ribbonprovider.provider.feign;
 
+import com.test.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RestController;

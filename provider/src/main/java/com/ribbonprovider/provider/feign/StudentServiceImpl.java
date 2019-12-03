@@ -1,5 +1,6 @@
 package com.ribbonprovider.provider.feign;
 
+import com.test.Student;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package com.consumer.myribbon.feign;
 
-import com.uestc.miaoshi.model.Student;
+import com.test.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
