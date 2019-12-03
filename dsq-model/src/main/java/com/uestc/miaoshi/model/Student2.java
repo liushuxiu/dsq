@@ -17,6 +17,8 @@ public class Student2 {
     private String name;
     private String id;
     private String card;
+    private long phoneNumber;
+    private String address;
 
     @Override
     public String toString(){
