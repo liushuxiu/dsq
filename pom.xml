@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dsq-dao</module>
+        <module>dsq-model</module>
+    </modules>
+    <groupId>com.uestc.miaoshi</groupId>
+    <artifactId>dsq</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>dsq</name>
+    <description>地山谦</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-release</id>
+            <name>internal releases</name>
+            <url>http://127.0.0.1:8081/repository/dsq-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>internal snapshot</name>
+            <url>http://127.0.0.1:8081/repository/dsq-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+    <dependencies>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
