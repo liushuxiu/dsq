@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class AspectDemo {
     private final static Logger logger = LoggerFactory.getLogger(PersonController.class);
     //定义切点
-    @Pointcut("execution(* com.uestc.miaoshi.controller.*.*(..))")
+    @Pointcut("execution(* com.uestc.miaoshi.service.*.*(..))")
     public void qieru(){
 
     }

@@ -30,5 +30,11 @@ public class PersonServiceImpl implements PersonService {
         personOtherService.insert2();
         log.info("end insert @@@@@@@@@@@@@@@@@");
     }
+
+    @Override
+    public void testAop() {
+
+        System.out.println("test aop");
+    }
 }
 

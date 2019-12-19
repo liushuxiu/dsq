@@ -11,6 +11,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Collections;
 import java.util.List;
@@ -34,6 +35,13 @@ public class PersonController {
 
     static final Gson gson = new Gson();
 
+    @GetMapping("xixi")
+    public String xixi() {
+
+        personService.testAop();
+
+        return null;
+    }
 
     @GetMapping("/fenye")
     public void findPerson(int page, int size) throws Exception {

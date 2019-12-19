@@ -29,6 +29,8 @@ public interface PersonService {
 
     public void insert();
 
+    public void testAop();
+
 
 
 }
