@@ -11,6 +11,7 @@ import groovy.util.logging.Slf4j
 
 import javax.persistence.criteria.CriteriaBuilder
 import javax.sound.midi.Soundbank
+import java.sql.SQLOutput
 import java.util.concurrent.ConcurrentMap
 import java.util.logging.Level
 import java.util.stream.Collectors
@@ -23,12 +24,22 @@ import static java.util.stream.Collectors.toConcurrentMap
 @CompileStatic
 class Test2 {
 
-
-
     public static void main(String[] args) {
-        Map<Integer, Integer> map = null
-         Integer x = map?.get(1)
+
+    }
+
+
+    public static void main3(String[] args) {
+        List<Integer> ly = new ArrayList<>();
+        ly.each {
+            println it
+        }
+        Integer m = ly == null ? 0 : ly.sum() as int;
+        println m
+        int x = ly.sum() as int;
         println x
+        ly.stream().forEach({ p -> System.out.println(p) })
+        Map<Integer, Integer> map = null
 
 
 

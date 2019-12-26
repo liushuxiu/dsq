@@ -20,7 +20,7 @@ public class MyribbonApplication {
 
     @Bean
     //负载均衡注解
-    @LoadBalanced
+//    @LoadBalanced
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
