@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @EnableEurekaClient
+
 @SpringBootApplication
 @EnableFeignClients(clients = StudentService.class) //指定API开启
 public class MyribbonApplication {
@@ -24,4 +25,8 @@ public class MyribbonApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
+
+
+
 }
