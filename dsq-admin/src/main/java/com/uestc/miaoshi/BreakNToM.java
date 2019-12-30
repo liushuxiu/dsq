@@ -1,5 +1,7 @@
 package com.uestc.miaoshi;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 class TreeNode {
@@ -19,6 +21,7 @@ class TreeNode {
 public class BreakNToM {
 
     static ArrayList<TreeNode> leafs = new ArrayList<>();
+    static ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -31,13 +34,31 @@ public class BreakNToM {
             for (TreeNode leaf : leafs) {
                 recursive(leaf);
             }
+
+            Collections.sort(result, new Comparator<ArrayList<Integer>>() {
+                @Override
+                public int compare(ArrayList<Integer> o1, ArrayList<Integer> o2) {
+                    return recursiveCom(0, o1, o2);
+                }
+
+                private int recursiveCom(int i, ArrayList<Integer> o1, ArrayList<Integer> o2) {
+                    int sub = o1.get(i) - o2.get(i);
+                    if (sub == 0 ) {
+                        return recursiveCom(i + 1, o1, o2);
+                    }
+                    return  sub;
+                }
+            });
+
+            System.out.println(result);
         }
 
     }
 
     private static void recursive(TreeNode leaf) {
         if (leaf.parent == null) {
-            System.out.println(leaf.res);
+            Collections.sort(leaf.res);
+            result.add(leaf.res);
             return;
         }
         ArrayList<Integer> res = leaf.res;
