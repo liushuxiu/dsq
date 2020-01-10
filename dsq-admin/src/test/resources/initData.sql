@@ -1,16 +1,16 @@
 DROP TABLE IF EXISTS kyc_result;
 CREATE TABLE `kyc_result` (
   `id` bigint(21) NOT NULL AUTO_INCREMENT,
-  `snapshot_id` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'snapshotid',
-  `version` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'kyc version',
-  `reference_id` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'order/application id',
-  `original_result` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '机审结果',
-  `final_result` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'kyc最终结果',
+  `snapshot_id` varchar(50)  NOT NULL COMMENT 'snapshotid',
+  `version` varchar(50)  NOT NULL COMMENT 'kyc version',
+  `reference_id` varchar(50)  NOT NULL COMMENT 'order/application id',
+  `original_result` varchar(10)  DEFAULT NULL COMMENT '机审结果',
+  `final_result` varchar(10)  DEFAULT NULL COMMENT 'kyc最终结果',
   `create_timestamp` bigint(20) NOT NULL,
   `update_timestamp` bigint(20) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniq_snapshot_id` (`snapshot_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='kyc结果表';
+)     COMMENT='kyc结果表';
 
 -- ----------------------------
 -- Table structure for `student`
@@ -36,4 +36,4 @@ CREATE TABLE `person` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
-insert into kyc_result (snapshot_id, version, reference_id) values ('a', 'v', 'ss');
+-- insert into kyc_result (snapshot_id, version, reference_id) values ('a', 'v', 'ss');

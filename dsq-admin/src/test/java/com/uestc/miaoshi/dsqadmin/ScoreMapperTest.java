@@ -10,16 +10,18 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
-@ActiveProfiles("application.properties")
+//@ActiveProfiles("application.properties")
 //@ActiveProfiles("ut")
+@ActiveProfiles("ly")
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = {DsqAdminApplication.class, DataSourceAutoConfiguration.class})
+@SpringBootTest(classes = {App.class, DataSourceAutoConfiguration.class})
 public class ScoreMapperTest {
     @Autowired
     private ScoreMapper scoreMapper;

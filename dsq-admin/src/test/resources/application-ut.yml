@@ -1,18 +1,18 @@
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
+#    type: com.zaxxer.hikari.HikariDataSource
     #H2内存数据库，测试使用数据库
     username:          #空（即" "，可能不写也行）
     password:          #空
     schema:
-      classpath: init_table.sql  #这里填写你要初始化表的脚本
+      - classpath: init_table.sql  #这里填写你要初始化表的脚本
     data:
-      classpath: initData.sql      #这里填写你要加载的数据的脚本
+      - classpath: initData.sql      #这里填写你要加载的数据的脚本
 
     url: jdbc:h2:mem:databaseName
     driver-class-name: org.h2.Driver
 mybatis:
-  type-handlers-package=com: com.uestc.miaoshi
+  type-handlers-package: com.uestc.miaoshi
 
 
 #  jpa:
