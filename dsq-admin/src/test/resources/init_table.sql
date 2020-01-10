@@ -1,27 +1,15 @@
 -- ----------------------------
--- Table structure for `student`
+-- Table structure for `score`
 -- ----------------------------
-DROP TABLE IF EXISTS `student`;
-CREATE TABLE `student` (
+DROP TABLE IF EXISTS `score`;
+CREATE TABLE `score` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(1024) NOT NULL,
-  `sex` tinyint(1) ,
-  `addr` varchar(1024) NOT NULL,
+  `score` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
--- Table structure for `person`
--- ----------------------------
-DROP TABLE IF EXISTS `person`;
-CREATE TABLE `person` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(1024) NOT NULL,
-  `cities` varchar(1024) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+insert into score (name, score) values ('a', 99);
 
 
-
-
-insert into student ( name, addr) values ('a', 'v');

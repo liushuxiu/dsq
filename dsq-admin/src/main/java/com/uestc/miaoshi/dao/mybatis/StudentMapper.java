@@ -1,5 +1,6 @@
-package com.uestc.miaoshi.dsqadmin;
+package com.uestc.miaoshi.dao.mybatis;
 
+import com.uestc.miaoshi.model.Student;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
@@ -15,4 +16,5 @@ public interface StudentMapper {
 
     @Select("select * from student")
     List<Student> selectAll();
+
 }
