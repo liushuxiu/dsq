@@ -20,14 +20,14 @@ public class Student implements RowMapper<Student> {
     private  Integer id;
     private String name;
     private String addr;
-//    private Integer age;
+    private Integer age;
 
     @Override
     public com.uestc.miaoshi.model.Student mapRow(ResultSet rs, int i) throws SQLException {
         Student student = new Student();
         student.id = rs.getInt("id");
         student.name = rs.getString("name");
-//        student.age = rs.getInt("age");
+        student.age = rs.getInt("age");
         student.addr = rs.getString("addr");
         return student;
     }

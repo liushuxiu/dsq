@@ -1,5 +1,8 @@
 package com.uestc.miaoshi.dsqadmin;
 
+import com.uestc.miaoshi.DsqAdminApplication;
+import com.uestc.miaoshi.dao.mybatis.ScoreMapper;
+import com.uestc.miaoshi.model.Score;
 import com.uestc.miaoshi.model.Student;
 import org.junit.Assert;
 import org.junit.Test;
@@ -16,7 +19,7 @@ import java.util.List;
 @ActiveProfiles("application.properties")
 //@ActiveProfiles("ut")
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = {ApplicationTest.class, DataSourceAutoConfiguration.class})
+@SpringBootTest(classes = {DsqAdminApplication.class, DataSourceAutoConfiguration.class})
 public class ScoreMapperTest {
     @Autowired
     private ScoreMapper scoreMapper;

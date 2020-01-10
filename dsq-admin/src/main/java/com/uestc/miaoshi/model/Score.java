@@ -1,4 +1,4 @@
-package com.uestc.miaoshi.dsqadmin;
+package com.uestc.miaoshi.model;
 
 import lombok.Data;
 import org.springframework.jdbc.core.RowMapper;

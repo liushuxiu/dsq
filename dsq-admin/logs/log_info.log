@@ -1105,3 +1105,65 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 2020-01-10 16:05:51.183 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2020-01-10 16:05:51.187 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2020-01-10 16:05:51.191 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-01-10 16:06:13.657 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - Starting ScoreMapperTest on dsq with PID 6229 (started by dsq in /Users/dsq/pj/dsq/dsq-admin)
+2020-01-10 16:06:13.659 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - The following profiles are active: application.properties
+2020-01-10 16:06:15.083 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-10 16:06:15.107 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2020-01-10 16:06:15.684 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 16:06:15.812 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-01-10 16:06:16.067 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-01-10 16:06:16.251 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-10 16:06:16.376 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-10 16:06:16.600 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-10 16:06:16.821 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-10 16:06:17.172 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-10 16:06:17.182 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-10 16:06:17.826 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 16:06:17.961 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-01-10 16:06:18.970 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - Started ScoreMapperTest in 6.344 seconds (JVM running for 7.716)
+2020-01-10 16:06:22.504 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-10 16:06:22.505 [SpringContextShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-10 16:06:22.506 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-01-10 16:06:22.509 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-01-10 16:06:22.514 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-01-10 16:07:29.298 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - Starting ScoreMapperTest on dsq with PID 6270 (started by dsq in /Users/dsq/pj/dsq/dsq-admin)
+2020-01-10 16:07:29.300 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - The following profiles are active: application.properties
+2020-01-10 16:07:30.740 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-10 16:07:30.849 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94ms. Found 3 repository interfaces.
+2020-01-10 16:07:31.454 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 16:07:31.809 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-01-10 16:07:32.019 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-01-10 16:07:32.257 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-10 16:07:32.352 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-10 16:07:32.536 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-10 16:07:32.740 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-10 16:07:33.765 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-10 16:07:33.773 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-10 16:07:35.581 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-10 16:07:35.582 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-01-10 16:07:35.590 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-01-10 16:07:35.595 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-01-10 16:07:35.604 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-01-10 16:08:16.533 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - Starting ScoreMapperTest on dsq with PID 6283 (started by dsq in /Users/dsq/pj/dsq/dsq-admin)
+2020-01-10 16:08:16.534 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - The following profiles are active: application.properties
+2020-01-10 16:08:17.601 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-01-10 16:08:17.677 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66ms. Found 3 repository interfaces.
+2020-01-10 16:08:18.116 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-10 16:08:18.383 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-01-10 16:08:18.544 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-01-10 16:08:18.714 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-10 16:08:18.793 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+2020-01-10 16:08:18.932 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-10 16:08:19.100 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-10 16:08:19.902 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-10 16:08:19.909 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-10 16:08:21.700 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-10 16:08:21.921 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-01-10 16:08:22.898 [main] INFO  com.uestc.miaoshi.dsqadmin.ScoreMapperTest - Started ScoreMapperTest in 7.021 seconds (JVM running for 7.989)
+2020-01-10 16:08:25.241 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-10 16:08:25.244 [SpringContextShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-10 16:08:25.244 [SpringContextShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-01-10 16:08:25.252 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-01-10 16:08:25.257 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

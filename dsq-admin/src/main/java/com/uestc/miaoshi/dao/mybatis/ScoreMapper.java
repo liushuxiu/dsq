@@ -1,5 +1,6 @@
-package com.uestc.miaoshi.dsqadmin;
+package com.uestc.miaoshi.dao.mybatis;
 
+import com.uestc.miaoshi.model.Score;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
