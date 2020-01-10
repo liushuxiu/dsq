@@ -16,4 +16,7 @@ public interface ScoreMapper {
 
     @Select("select * from score")
     List<Score> selectAll();
+
+    @Select("select * from score where name = #{name}")
+    Score get(String name);
 }

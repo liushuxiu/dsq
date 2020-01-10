@@ -8898,3 +8898,7 @@ Caused by: org.springframework.boot.context.properties.bind.UnboundConfiguration
 	... 95 common frames omitted
 2020-01-10 16:47:23.623 [SpringContextShutdownHook] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
 2020-01-10 16:47:23.625 [SpringContextShutdownHook] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2020-01-10 17:11:55.764 [SpringContextShutdownHook] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2020-01-10 17:11:55.765 [SpringContextShutdownHook] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2020-01-10 17:15:14.005 [SpringContextShutdownHook] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2020-01-10 17:15:14.007 [SpringContextShutdownHook] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
