@@ -18,8 +18,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.List;
 
 //@ActiveProfiles("application.properties")
-//@ActiveProfiles("ut")
-@ActiveProfiles("ly")
+@ActiveProfiles("ut")
+//@ActiveProfiles("ly")
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes = {App.class, DataSourceAutoConfiguration.class})
 public class ScoreMapperTest {
@@ -37,6 +37,6 @@ public class ScoreMapperTest {
         scoreMapper.insert(stu);
 
         List<Score> scoreList = scoreMapper.selectAll();
-        Assert.assertEquals(1, scoreList.size());
+        Assert.assertEquals(2, scoreList.size());
     }
 }
