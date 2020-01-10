@@ -34,6 +34,7 @@ public class BreakNToM {
             count = 0;
             for (int i = 1; i <=n; i++) {
                 TreeNode root = f(n, i, true);
+                System.out.println(root.res);
                 count = count + root.res.size();
 
             }
@@ -46,7 +47,7 @@ public class BreakNToM {
         }
     }
     private static String getKey(int m, int n, boolean flag) {
-        return (m) + ":" +(n) + ":" + flag;
+        return (n) + ":" +(m) + ":" + flag;
     }
 //    private static void recursive(TreeNode leaf) {
 //
@@ -69,14 +70,18 @@ public class BreakNToM {
 //        recursive(leaf.parent);
 //    }
 
-    static void addAll(ArrayList<Integer> list) {
+    static  ArrayList<Integer> addAll(ArrayList<Integer> list) {
+        ArrayList<Integer> res = new ArrayList<>(list);
         for (int i = 0; i < list.size(); i++) {
-            list.set(i, 1 + list.get(i));
+            res.add(1 + list.get(i));
         }
+        return res;
     }
 
-    static void addOne(ArrayList<Integer> list) {
-        list.add(1);
+    static ArrayList<Integer> addOne(ArrayList<Integer> list) {
+        ArrayList<Integer> res = new ArrayList<>(list);
+        res.add(1);
+        return res;
     }
 
     static HashMap<Integer, ArrayList<Integer>> M_LIST = new HashMap<>();
@@ -132,13 +137,13 @@ public class BreakNToM {
             ArrayList<ArrayList<Integer>> leftRess = node.left.res;
             if (node.left.addAll) {
                 for (ArrayList<Integer> leftRes : leftRess) {
-                    addAll(leftRes);
-                    node.res.add(leftRes);
+                    ArrayList<Integer> integers = addAll(leftRes);
+                    node.res.add(integers);
                 }
             } else {
                 for (ArrayList<Integer> leftRes : leftRess) {
-                    addOne(leftRes);
-                    node.res.add(leftRes);
+                    ArrayList<Integer> integers = addOne(leftRes);
+                    node.res.add(integers);
                 }
             }
         }
@@ -151,13 +156,13 @@ public class BreakNToM {
             ArrayList<ArrayList<Integer>> rightRess = node.right.res;
             if (node.right.addAll) {
                 for (ArrayList<Integer> rightRes : rightRess) {
-                    addAll(rightRes);
-                    node.res.add(rightRes);
+                    ArrayList<Integer> integers = addAll(rightRes);
+                    node.res.add(integers);
                 }
             } else {
                 for (ArrayList<Integer> rightRes : rightRess) {
-                    addOne(rightRes);
-                    node.res.add(rightRes);
+                    ArrayList<Integer> integers = addOne(rightRes);
+                    node.res.add(integers);
                 }
             }
         }
